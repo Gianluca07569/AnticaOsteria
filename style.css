@@ -1,0 +1,95 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #7c7772, #ada9a6);
+    color: #333;
+    padding: 5vh 5vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #3d3d3d;
+  }
+  
+  .lang-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .lang-buttons button {
+    font-size: 1.2rem;
+    padding: 14px 24px;
+    background-color: #dcdcdc;
+    border: none;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .lang-buttons button:hover {
+    background-color: #dcdcdc;
+    transform: scale(1.05);
+  }
+  
+  /* Fade in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive typography */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  
+    .lang-buttons button {
+      font-size: 1rem;
+      padding: 12px 20px;
+    }
+  }
+  .logo-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
